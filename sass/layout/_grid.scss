@@ -1,0 +1,19 @@
+.grid {
+  max-width: $grid-width;
+  margin: 0 auto;
+  display: grid;
+  row-gap: $gutter-vertical;
+  column-gap: $gutter-horizontal;
+
+  &--2-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &--3-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &--4-cols {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
