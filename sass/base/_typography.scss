@@ -41,6 +41,12 @@ body {
       font-size: 2rem;
       letter-spacing: 1.5rem;
       animation: moveInRight 1s ease-out;
+      display: block;
+
+      &:hover {
+        transform: scale(1);
+        text-shadow: 0rem 0rem 0rem rgba($color-black, 0);
+      }
     }
   }
 
