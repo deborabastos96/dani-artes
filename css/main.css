@@ -331,8 +331,8 @@ body {
   background-image: linear-gradient(to right bottom, #f8be7e, #e8a015), url(../img/dani-artes-1.webp);
 }
 .card__picture--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(../img/dani-artes-1.webp);
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/dani-artes-1.webp);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(../img/dani-artes-4.webp);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/dani-artes-4.webp);
 }
 .card__picture--3 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), url(../img/dani-artes-1.webp);
@@ -917,7 +917,8 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/dani-artes-1.webp);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/dani-artes-2.webp);
+  background-position: center;
   background-size: 100%;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
