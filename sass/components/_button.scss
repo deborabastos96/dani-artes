@@ -10,8 +10,10 @@
     position: relative;
     margin-top: 4rem;
 
-    border: none;
-    cursor: pointer;
+    @include respond(tab-port) {
+      padding: 1.2rem 3.2rem;
+      font-size: 1.6rem;
+    }
   }
 
   &:hover {
@@ -87,5 +89,19 @@
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
       transform: translateY(0);
     }
+  }
+
+  &--form {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
   }
 }

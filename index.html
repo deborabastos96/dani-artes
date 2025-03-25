@@ -19,9 +19,49 @@
       rel="stylesheet"
     />
 
+    <script>
+      function closeNav() {
+        document.getElementById("navi-toggle").checked = false;
+      }
+    </script>
+
     <title>Dani Artes</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#sobre" class="navigation__link" onclick="closeNav()"
+              ><span>01</span>Sobre Dani Artes</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#beneficios" class="navigation__link" onclick="closeNav()"
+              ><span>02</span>Seus Benefícios</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#artes" class="navigation__link" onclick="closeNav()"
+              ><span>03</span>Ver Artes</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" onclick="closeNav()"
+              ><span>04</span>Fazer encomenda</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img
@@ -36,12 +76,17 @@
         <h2 class="heading-secondary heading-secondary-banner">
           Arte feita à mão
         </h2>
-        <a href="#" class="btn btn--white btn--animated">Faça sua encomenda</a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5534991763491&text=Ol%C3%A1!%20Estava%20no%20site%20Dani%20Artes%20e%20gostaria%20de%20falar%20com%20voc%C3%AA."
+          target="_blank"
+          class="btn btn--white btn--animated"
+          >Faça sua encomenda</a
+        >
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="sobre">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Artesanato que encanta e transforma</h2>
         </div>
@@ -95,7 +140,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="beneficios">
         <div class="grid grid--4-cols">
           <div>
             <div class="feature-box">
@@ -176,7 +221,12 @@
                   <p class="card__price-only">A partir de</p>
                   <p class="card__price-value">R$850</p>
                 </div>
-                <a href="#popup" class="btn btn--white">Encomende agora</a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5534991763491&text=Ol%C3%A1!%20Estava%20no%20site%20Dani%20Artes%20e%20gostaria%20de%20falar%20com%20voc%C3%AA."
+                  target="_blank"
+                  class="btn btn--white"
+                  >Encomende agora</a
+                >
               </div>
             </div>
           </div>
@@ -206,7 +256,12 @@
                   <p class="card__price-only">A partir de</p>
                   <p class="card__price-value">R$100</p>
                 </div>
-                <a href="#popup" class="btn btn--white">Encomende agora</a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5534991763491&text=Ol%C3%A1!%20Estava%20no%20site%20Dani%20Artes%20e%20gostaria%20de%20falar%20com%20voc%C3%AA."
+                  target="_blank"
+                  class="btn btn--white"
+                  >Encomende agora</a
+                >
               </div>
             </div>
           </div>
@@ -236,14 +291,24 @@
                   <p class="card__price-only">A partir de</p>
                   <p class="card__price-value">R$100</p>
                 </div>
-                <a href="#popup" class="btn btn--white">Encomende agora</a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5534991763491&text=Ol%C3%A1!%20Estava%20no%20site%20Dani%20Artes%20e%20gostaria%20de%20falar%20com%20voc%C3%AA."
+                  target="_blank"
+                  class="btn btn--white"
+                  >Encomende agora</a
+                >
               </div>
             </div>
           </div>
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--orange">Faça sua encomenda</a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5534991763491&text=Ol%C3%A1!%20Estava%20no%20site%20Dani%20Artes%20e%20gostaria%20de%20falar%20com%20voc%C3%AA."
+            target="_blank"
+            class="btn btn--orange"
+            >Faça sua encomenda</a
+          >
         </div>
       </section>
 
@@ -253,29 +318,29 @@
             <div class="book__form">
               <form action="#" class="form">
                 <div class="u-margin-bottom-medium">
-                  <h2 class="heading-secondary">Start booking now</h2>
+                  <h2 class="heading-secondary">Faça sua encomenda</h2>
                 </div>
 
                 <div class="form__group">
                   <input
                     type="text"
                     class="form__input"
-                    placeholder="Full Name"
+                    placeholder="Nome Completo"
                     id="name"
                     required
                   />
-                  <label for="name" class="form__label">Full name</label>
+                  <label for="name" class="form__label">Nome Completo</label>
                 </div>
 
                 <div class="form__group">
                   <input
                     type="email"
                     class="form__input"
-                    placeholder="Email Address"
+                    placeholder="E-mail"
                     id="email"
                     required
                   />
-                  <label for="email" class="form__label">Email address</label>
+                  <label for="email" class="form__label">E-mail</label>
                 </div>
 
                 <div class="form__grou u-margin-bottom-medium">
@@ -283,12 +348,12 @@
                     <input
                       type="radio"
                       class="form__radio-input"
-                      id="small"
-                      name="size"
+                      id="mandala"
+                      name="arte"
                     />
-                    <label for="small" class="form__radio-label">
+                    <label for="mandala" class="form__radio-label">
                       <span class="form__radio-button"></span>
-                      Small tour group</label
+                      Mandala</label
                     >
                   </div>
 
@@ -296,12 +361,12 @@
                     <input
                       type="radio"
                       class="form__radio-input"
-                      id="large"
-                      name="size"
+                      id="amigurumi"
+                      name="arte"
                     />
-                    <label for="large" class="form__radio-label">
+                    <label for="amigurumi" class="form__radio-label">
                       <span class="form__radio-button"></span>
-                      Large tour group</label
+                      Amigurumi</label
                     >
                   </div>
 
@@ -309,18 +374,20 @@
                     <input
                       type="radio"
                       class="form__radio-input"
-                      id="large"
-                      name="size"
+                      id="quadro"
+                      name="arte"
                     />
-                    <label for="large" class="form__radio-label">
+                    <label for="quadro" class="form__radio-label">
                       <span class="form__radio-button"></span>
-                      Large tour group</label
+                      Quadro</label
                     >
                   </div>
                 </div>
 
                 <div class="form__group">
-                  <button class="btn">Next step &rarr;</button>
+                  <button class="btn btn--form btn--orange">
+                    Enviar &rarr;
+                  </button>
                 </div>
               </form>
             </div>
@@ -331,86 +398,43 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <picture class="footer__logo">
-          <source
-            srcset="
-              img/logo-green-small-1x.png 1x,
-              img/logo-green-small-2x.png 2x
-            "
-            media="(max-width: 37.5em)"
-          />
-          <img alt="Full logo" src="img/dani-artes-logo.webp" />
-        </picture>
+        <img
+          alt="Full logo"
+          src="img/dani-artes-logo.webp"
+          class="footer__logo"
+        />
       </div>
 
-      <div class="row">
-        <div class="col-1-of-2">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Company</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Contact us</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Carrers</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Privacy</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Terms</a>
-              </li>
-            </ul>
-          </div>
+      <div class="grid grid--2-cols grid--2-cols-footer">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a
+                href="https://api.whatsapp.com/send?phone=5534991763491&text=Ol%C3%A1!%20Estava%20no%20site%20Dani%20Artes%20e%20gostaria%20de%20falar%20com%20voc%C3%AA."
+                target="_blank"
+                class="footer__link"
+                >Entrar em contato</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#artes" class="footer__link">Ver Artes</a>
+            </li>
+            <li class="footer__item">
+              <a href="#sobre" class="footer__link">Saber mais Sobre</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
-            Built by <a href="#" class="footer__link">Débora Bastos</a> for the
-            online course
-            <a href="#" class="footer__link">Advanced CSS and Sass</a>.
-            Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use
-            this webpage for both personal and commercial use, but NOT to claim
-            it as your own design. A credit to the original author, Jonas
-            Schmedtmann, is of course highly appreciated!
-          </p>
-        </div>
+        <p class="footer__copyright">
+          Website desenvolvido por
+          <a
+            href="https://www.instagram.com/deborabaastos/"
+            target="_blank"
+            class="footer__link"
+            >Débora Bastos</a
+          >.
+        </p>
       </div>
     </footer>
-
-    <div class="popup" id="popup">
-      <div class="popup__content">
-        <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
-          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
-        </div>
-
-        <div class="popup__right">
-          <a href="#section-tours" class="popup__close">&times;</a>
-          <div class="u-margin-bottom-small">
-            <h2 class="heading-secondary">Start booking now</h2>
-          </div>
-
-          <h3 class="heading-tertiary u-margin-bottom-small">
-            Important - Please read the terms and conditions first
-          </h3>
-
-          <p class="popup__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-            repellendus commodi impedit eos inventore labore vero harum
-            consectetur animi placeat iste at sint eum, quam quo blanditiis aut
-            incidunt aliquam? Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Nesciunt repellendus commodi impedit eos inventore
-            labore vero harum consectetur animi placeat iste at sint eum.
-          </p>
-
-          <div>
-            <a href="#" class="btn btn--green">Book now</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

@@ -16,10 +16,19 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
+
+    @include respond(tab-port) {
+      top: 2rem;
+      left: 2rem;
+    }
   }
 
   &__logo {
     height: 10rem;
+
+    @include respond(tab-port) {
+      height: 6rem;
+    }
   }
 
   &__text-box {
@@ -29,5 +38,9 @@
     transform: translate(-50%, -50%);
     text-align: center;
     backface-visibility: hidden;
+
+    @include respond(tab-port) {
+      width: 500px;
+    }
   }
 }

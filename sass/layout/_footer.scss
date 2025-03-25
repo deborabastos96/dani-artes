@@ -1,24 +1,24 @@
 .footer {
-  background-color: $color-grey-dark;
+  background-color: $color-grey-dark-2;
   padding: 10rem 0;
   font-size: 1.4rem;
   color: $color-grey-light;
 
-  /* @include respond(tab-port) {
-    padding: 8rem 0;
-  } */
+  @include respond(tab-land) {
+    padding: 4rem 3rem;
+  }
 
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
 
-    /* @include respond(tab-port) {
+    @include respond(tab-port) {
       margin-bottom: 6rem;
-    } */
+    }
   }
 
   &__logo {
-    width: 15rem;
+    width: 18rem;
     height: auto;
   }
 
@@ -26,22 +26,17 @@
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
     display: inline-block;
-
-    /* @include respond(tab-port) {
-      width: 100%;
-      text-align: center;
-    } */
   }
 
   &__list {
     list-style: none;
-  }
+    display: flex;
+    justify-content: space-between;
 
-  &__item {
-    display: inline-block;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
     }
   }
 
@@ -49,7 +44,7 @@
     &:link,
     &:visited {
       color: $color-grey-light;
-      background-color: $color-grey-dark;
+      background-color: $color-grey-dark-2;
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
@@ -67,12 +62,9 @@
   &__copyright {
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
-    width: 80%;
-    float: right;
 
-    /* @include respond(tab-port) {
-      width: 100%;
-      float: none;
-    } */
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }
